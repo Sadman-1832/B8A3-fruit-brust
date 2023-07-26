@@ -8,6 +8,8 @@
     <!-- tailwind & DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/b9f6f73870.js" crossorigin="anonymous"></script>
     <!-- custom styles -->
     <script>
         tailwind.config = {
@@ -16,12 +18,14 @@
                     colors: {
                         clifford: '#da373d',
                         'color-primary': '#F85559',
+                        'white': '#FFF',
+                        'common': '#121212',
                     }
                 }
             }
         }
     </script>
-    
+
 
     <!-- lato font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,47 +36,60 @@
             font-family: 'Lato', sans-serif;
         }
     </style>
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/b9f6f73870.js" crossorigin="anonymous"></script>
-    <title>FruitBrust</title>
+
+    <title>FruitBurst</title>
 </head>
 
 <body class="font-lato">
     <!-- header -->
-    <header class="container mx-auto">
+    <header class="container lg:mx-auto">
         <!-- nav section -->
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-
+        <nav class="container lg:mx-auto my-12">
+            <div class="navbar bg-white lg:bg-color-primary rounded-full py-9 ">
+                <div class="navbar-start gap-7 text-white text-lg ml-6">
+                    <a href="">Home</a><a href="">About Us</a><a href="">Shop</a><a href="">All Fruits</a>
                 </div>
-                <div class="navbar-center">
-                    <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <div class="navbar-center "> 
+                        <div class="flex items-center gap-4 text-2xl lg:text-4xl text-common lg:text-white font-bold">
+                            <span><img src="./images/logo.png" alt=""></span><h2>Fruit Burst</h2>
+                        </div>
+                    </a>
                 </div>
                 <div class="navbar-end">
-                   <div>
-                    <div class=" form-control">
-                        <input type="text" placeholder="Search here" class=" input input-bordered w-24 md:w-auto" />
-                    </div>
-                    <i class="fa-light fa-magnifying-glass"></i>
-                </div>
-                    <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost btn-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h7" />
-                            </svg>
+                    <form>
+                        <label class="relative hidden md:hidden lg:block">
+                            <input class="w-80 h-10 bg-white rounded-full py-8 px-16 mr-10 focus:outline-none"
+                                placeholder="Search Here" type="text" />
+
+                            <span class="absolute inset-y-0 right-12 flex items-center pr-3">
+                                <svg class="h-5 w-5 fill-black" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="30" height="30" viewBox="0 0 30 30">
+                                    <path
+                                        d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
+                                    </path>
+                                </svg>
+                            </span>
                         </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Homepage</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>About</a></li>
-                        </ul>
-                    </div>
+                    </form>
+                </div>
+                <div class="dropdown lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
                 </div>
             </div>
+            
         </nav>
 
 
