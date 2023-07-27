@@ -46,55 +46,56 @@
     <!-- nav section -->
     <nav class=" max-w-xl md:container lg:container mx-auto my-12">
       <div class="navbar bg-white lg:bg-color-primary rounded-full py-9 gap-8">
-        <div class="navbar-start text-white text-lg ml-5 gap-5">
+        <div class="navbar-start text-white text-lg ml-5 gap-5 hidden lg:block">
           <a href="">Home</a><a href="">About Us</a><a href="">Shop</a><a href="">All Fruits</a>
         </div>
-          <div class="navbar-center ">
-            <div
-              class=" flex justify-between items-center gap-4 text-2xl lg:text-4xl text-common lg:text-white font-bold">
-              <span><img src="./images/logo.png" alt=""></span>
-              <h2>Fruit Burst</h2>
-            </div>
-            </a>
+        <div class="navbar-center ">
+          <div
+            class=" flex justify-between items-center gap-4 text-2xl lg:text-4xl text-common lg:text-white font-bold">
+            <span><img src="./images/logo.png" alt=""></span>
+            <h2>Fruit Burst</h2>
           </div>
-          <div class="navbar-end">
-            <form>
-              <label class="relative hidden md:hidden lg:block">
-                <input class="w-80 h-10 bg-white rounded-full py-8 px-16 mr-10 focus:outline-none"
-                  placeholder="Search Here" type="text" />
+          </a>
+        </div>
+        <div class="navbar-end">
+          <form>
+            <label class="relative hidden md:hidden lg:block">
+              <input class="w-80 h-10 bg-white rounded-full py-8 px-16 mr-10 focus:outline-none"
+                placeholder="Search Here" type="text" />
 
-                <span class="absolute inset-y-0 right-12 flex items-center pr-3">
-                  <svg class="h-5 w-5 fill-black" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
-                    height="30" viewBox="0 0 30 30">
-                    <path
-                      d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
-                    </path>
-                  </svg>
-                </span>
-              </label>
-            </form>
-          </div>
-          <div class="dropdown lg:hidden">
-            <label tabindex="0" class="btn btn-ghost btn-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-              </svg>
+              <span class="absolute inset-y-0 right-12 flex items-center pr-3">
+                <svg class="h-5 w-5 fill-black" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30"
+                  height="30" viewBox="0 0 30 30">
+                  <path
+                    d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z">
+                  </path>
+                </svg>
+              </span>
             </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Home</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Shop</a></li>
-              <li><a>All Fruits</a></li>
-            </ul>
-          </div>
-        
+          </form>
+        </div>
+        <div class="dropdown lg:hidden">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+
       </div>
 
     </nav>
     <!-- carousel section -->
     <section>
-      <div class="carousel w-full">
+     <div class="relative">
+      <div class="carousel w-full rounded-lg bg-gradient-to-r from-[#121212] to-[ #12121200] ml-3 mr-3 lg:mx-auto">
         <div id="slide1" class="carousel-item relative w-full">
           <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
             <div class="hero-overlay bg-opacity-60"></div>
@@ -107,10 +108,10 @@
             </div>
           </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
-        </div> 
+        </div>
         <div id="slide2" class="carousel-item relative w-full">
           <div class="hero min-h-screen" style="background-image: url(./images/banner2.png);">
             <div class="hero-overlay bg-opacity-60"></div>
@@ -123,10 +124,10 @@
             </div>
           </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
-        </div> 
+        </div>
         <div id="slide3" class="carousel-item relative w-full">
           <div class="hero min-h-screen" style="background-image: url(./images/banner3.png);">
             <div class="hero-overlay bg-opacity-60"></div>
@@ -139,10 +140,10 @@
             </div>
           </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide4" class="btn btn-circle">❯</a>
           </div>
-        </div> 
+        </div>
         <div id="slide4" class="carousel-item relative w-full">
           <div class="hero min-h-screen" style="background-image: url(./images/banner4.png);">
             <div class="hero-overlay bg-opacity-60"></div>
@@ -155,13 +156,38 @@
             </div>
           </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>
           </div>
-        </div> 
-       
         </div>
       </div>
+      <div class="hidden lg:absolute lg:flex justify-around w-3/4 ml-32 -mt-24 bg-white px-16 py-12 rounded-lg shadow-xl">
+        <div><img src="./images/fruit1.png" alt="">
+          <h4 class="text-lg font-bold">Berry</h4>
+        </img></div>
+        <div>
+          <img src="./images/fruit2.png" alt="">
+          <h4 class="text-lg font-bold">Orange</h4>
+        </img>
+        </div>
+        <div>
+          <img src="./images/fruit3.png" alt="">
+          <h4 class="text-lg font-bold">Mango</h4>
+        </img>
+        </div>
+        <div>
+          <img src="./images/fruit4.png" alt="">
+          <h4 class="text-lg
+           font-bold">Strawberry</h>
+        </img>
+        </div>
+        <div>
+          <img src="./images/fruit5.png" alt="">
+          <h4 class="text-lg font-bold">Pomegranate</h4>
+        </img>
+        </div>
+      </div>
+     </div>
     </section>
 
   </header>
